@@ -1,0 +1,15 @@
+.card-notFound {
+  width: 98%;
+  border-radius: 8px;
+  border: 1px solid #0f0f0f;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f0efef;
+  span {
+    opacity: 1;
+    font-size: large;
+  }
+}

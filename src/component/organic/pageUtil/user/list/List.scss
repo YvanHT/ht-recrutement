@@ -1,0 +1,82 @@
+@import "../../../../style.scss";
+
+.user {
+  margin: auto;
+  width: 80vw;
+}
+.user__content {
+  .list {
+    display: grid;
+    grid-template-columns: 55% 38%;
+    gap: 25px;
+    .list-input {
+      position: relative;
+      .list__input-text {
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+      }
+      .list__input-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .input-flex__content {
+          width: 48%;
+          margin: 0.7rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+        .list__reset-btn {
+          width: 48%;
+          margin: 0.7rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+      }
+      .list__btn-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 0 2rem;
+        .list__search-btn {
+          width: 18%;
+          margin: 0.7rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+      }
+      .list__pagination {
+        width:100%;
+        margin: 1.5rem 0 0;
+        position: absolute;
+        bottom: 1px;
+      }
+    }
+    .list__data-table {
+      margin: 0 0;
+      height: 70vh;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+    .list__data-table::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    /* Style du "pouce" de la scrollbar */
+    .list__data-table::-webkit-scrollbar-thumb {
+      background-color: $color-primary-light; /* Couleur du "pouce" de la scrollbar */
+      border-radius: 15px; /* Bordure arrondie du "pouce" */
+    }
+  
+    .list__data-table::-webkit-scrollbar-track {
+      background-color: #dbd5d5; /* Couleur de la piste de la scrollbar */
+    }
+  
+    .list__data-table::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+  }
+}

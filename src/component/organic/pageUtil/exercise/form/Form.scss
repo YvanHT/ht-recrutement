@@ -1,0 +1,219 @@
+@import '../../../../style.scss';
+
+.exercice {
+  margin: auto;
+  width: 85vw;
+  position: relative;
+  .exercise__content {
+    height: 100vh;
+    display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .exercice__title {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      .show-button {
+        display: flex;
+        align-items: center;
+        button {
+          cursor: pointer;
+          border: 0;
+          background: none;
+          margin: 0.5rem;
+        }
+      }
+    }
+    .content__enunciated {
+      height: 80vh;
+      width: 90%;
+      padding-bottom: 40px;
+      padding-right: 25px;
+    }
+    .content__question {
+      overflow-y: scroll;
+      height: 80vh;
+      padding-bottom: 40px;
+      padding-top: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+    .content__add {
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      column-gap: 15px;
+      .content__menu {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        border: 1px solid #000101;
+        border-left: none;
+        button {
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .content__menu::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -9px;
+        border: 1px solid #000101;
+        width: 19px;
+        height: 18px;
+        border-right: transparent;
+        border-bottom: transparent;
+        background-color: transparent;
+        transform: rotate(-45deg);
+      }
+    }
+  
+    div::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    /* Style du "pouce" de la scrollbar */
+    div::-webkit-scrollbar-thumb {
+      background-color: $color-primary-light; /* Couleur du "pouce" de la scrollbar */
+      border-radius: 15px; /* Bordure arrondie du "pouce" */
+    }
+  
+    div::-webkit-scrollbar-track {
+      background-color: #dbd5d5; /* Couleur de la piste de la scrollbar */
+    }
+  
+    div::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+  }
+  .form__input-block {
+    .input-block__text {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 95%;
+      margin: 0 0 2.5rem 0;
+      position: relative;
+    }
+    .form-enunciated{
+      margin-top: 20px;
+      margin-bottom: 50px;
+      .form-input__upload {
+        width: 48%;
+        margin: 0 0 2.5rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+    }
+    .form-input__add-btn {
+      width: fit-content;
+      position: relative;
+    }
+  }
+  .button-footer{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 15px;
+    .button-prev{
+      width:35%;
+      display: flex;
+    }
+    .button-next{
+      width: 35%;
+      display: flex;
+      position: relative;
+      .content__status {
+        cursor: pointer;
+        position: absolute;
+        width: 72%;
+        border: 2px solid rgba(128, 128, 128, 0.5);
+        padding: 15px 20px 20px 15px;
+        border-radius: 8px;
+        background-color: white;
+        right: 0.5rem;
+        left: auto;
+        top: 3rem;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+  .form__input-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .input-block__text {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 95%;
+      margin: 0 0 2.5rem 0;
+      @include tabletMobileBreakpoint {
+        width: 100%;
+      }
+    }
+    .input-block__time {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      width: 95%;
+      margin: 0 0 2.5rem 0;
+      .text-duree__seconde {
+        width: 50%;
+        @include tabletMobileBreakpoint {
+          width: 40%;
+        }
+      }
+      .text-duree__minute {
+        width: 10%;
+        display: flex;
+        @include tabletMobileBreakpoint {
+          width: 20%;
+        }
+      }
+    }
+    .form-input__add-btn {
+      width: fit-content;
+      position: relative;
+    }
+  }
+  div::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  /* Style du "pouce" de la scrollbar */
+  div::-webkit-scrollbar-thumb {
+    background-color: $color-primary-light; /* Couleur du "pouce" de la scrollbar */
+    border-radius: 15px; /* Bordure arrondie du "pouce" */
+  }
+  
+  div::-webkit-scrollbar-track {
+    background-color: #dbd5d5; /* Couleur de la piste de la scrollbar */
+  }
+  
+  div::-webkit-scrollbar-corner {
+    background-color: transparent; 
+  }
+}

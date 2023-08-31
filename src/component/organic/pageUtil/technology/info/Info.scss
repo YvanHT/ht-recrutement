@@ -1,0 +1,35 @@
+@import '../../../../style.scss';
+
+.info-btn {
+  display: flex;
+  gap: 0 2rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  .info-btn__return {
+    width: 18%;
+    margin: 0.7rem 0;
+    @include tabletMobileBreakpoint {
+      width: 100%;
+    }
+  }
+  .info-btn__save {
+    width: 18%;
+    margin: 0.7rem 0;
+    @include tabletMobileBreakpoint {
+      width: 100%;
+    }
+  }
+}
+.content__title {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 24px;
+}
+.list__data-table {
+  margin: 2rem 0;
+  height: 30rem;
+}
+.text-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

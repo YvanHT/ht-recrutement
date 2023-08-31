@@ -1,0 +1,74 @@
+@import '../../../../style.scss';
+
+.offer {
+  margin: auto;
+  width: 80vw;
+}
+
+.button {
+  display: flex;
+  .show_button {
+    margin: 1.7rem 0 0 0;
+  }
+}
+
+.offer__content {
+  .list {
+    .flex__input {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      .input-combobox__content {
+        width: 78%;
+        margin: 0 0 1.5rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+      .input-text__content {
+        width: 78%;
+        margin: 0 0 1.5rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+      .list__reset-btn {
+        width: 18%;
+        margin: 0.7rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+    }
+    .list__btn-block {
+      display: flex;
+      gap: 0 2rem;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      .list__search-btn {
+        width: 18%;
+        margin: 0.7rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+      .list__add-btn {
+        width: 28%;
+        margin: 0.7rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+    }
+    .list__data-table {
+      margin: 2rem 0;
+      height: 30rem;
+      .list__pagination {
+        margin: 1.5rem 0 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../style.scss';
+
+.step-label{
+    width: 80vw;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.child-content{
+    width: 80vw;
+    padding-top: 25px;
+    .form__input-block {
+        .input-block__text {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 48%;
+          margin: 0 0 2.5rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+          .text-duree__seconde {
+            width: 50%;
+            @include tabletMobileBreakpoint {
+              width: 40%;
+            }
+          }
+          .text-duree__minute {
+            width: 30%;
+            @include tabletMobileBreakpoint {
+              width: 20%;
+            }
+          }
+        }
+      }
+}
+.button-footer{
+    width:48%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    .button-prev{
+      width:25%;
+      display: flex;
+      padding: 10px;
+      gap: 4px;
+    }
+    .button-next{
+      width:50%;
+      display: flex;
+      padding: 10px;
+      gap: 4px;
+    }
+}

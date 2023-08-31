@@ -1,0 +1,17 @@
+.ht-button-authentication {
+  display: flex;
+  justify-content: center;
+  .ht-button-authentication__google {
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    margin: 5px;
+    outline: none;
+    border-radius: 8px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    // background-color: #4285F4;
+  }
+}

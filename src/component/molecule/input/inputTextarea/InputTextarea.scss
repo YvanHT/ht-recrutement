@@ -1,0 +1,72 @@
+@import '../../../style.scss';
+
+.container-input {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    &.success{
+        --tw-border-opacity: 1;
+        border: rgb(81 176 110 / var(--tw-border-opacity));
+    }
+    &.default{
+        border: 2px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .label{
+        color: #333333 !important;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 500 !important;
+        line-height: 1;
+    }
+
+    .input {
+        flex-shrink: 1;
+        flex: 1 1 0%;
+        height: 3rem/* 48px */;
+        padding-left: 1rem/* 16px */;
+        padding-right: 1rem/* 16px */;
+        font-size: 1rem;
+        line-height: 1.25rem/* 20px */;
+        line-height: 2;
+        line-height: 1.5rem/* 24px */;
+        border-width: 1px;
+        --tw-text-opacity: 1;
+        color: rgba(0, 0, 0, 0.7);
+        border:none;
+        background-color: transparent;
+        border-radius: var(--rounded-btn, 0.5rem);
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    .input:focus {
+        outline: 2px solid hsla(var(--bc) / 0.2);
+        outline-offset: 2px;
+        outline-color: transparent;
+        background-color: transparent;
+    }
+    .input:hover{
+        outline-color: transparent;
+        background-color: transparent;
+    }
+    .action-button__delete{
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem 0 0.5rem 0;
+        button {
+          cursor: pointer;
+          padding: 0;
+          border: none;
+          background: none;
+        }
+    }
+}

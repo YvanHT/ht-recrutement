@@ -1,0 +1,42 @@
+@import '../../style.scss';
+
+.header {
+  position: fixed;
+  width: 92vw;
+  @include mobileBreakpoint {
+    position: relative;
+  }
+}
+
+.header__content {
+  padding: 30px 40px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  @include mobileBreakpoint {
+    padding: 10px 5px 0;
+  }
+  .content__logo {
+    @include tabletMobileBreakpoint {
+      display: none;
+    }
+  }
+  .content__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    .avatar__menu {
+      box-shadow: 5px 5px 12px $color-black-ripple;
+      padding: 5px 20px 5px 20px;
+      transition: 1s;
+      border-radius: 15px;
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+}

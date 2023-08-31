@@ -1,0 +1,52 @@
+@import '../../../../style.scss';
+
+@mixin text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.candidate__content {
+  .info {
+    border: 1px solid $color-secondary;
+    background-color: $color-ripple;
+    padding: 2rem;
+    width: 40%;
+    .info__loading {
+      display: flex;
+      justify-content: center;
+    }
+    .info__title {
+      @include text;
+    }
+    .info__subtitle {
+      @include text;
+    }
+    .info__content {
+      margin-top: 2rem;
+      .content__project {
+        display: flex;
+        .action-button {
+          display: flex;
+          justify-content: flex-start;
+          padding: 1rem 0 0.5rem 0;
+          button {
+            cursor: pointer;
+            padding: 0;
+            border: none;
+            background: none;
+          }
+        } 
+      }
+      .content__title {
+        font-weight: bold;
+      }
+    }
+  }
+  .info-btn {
+    display: flex;
+    div {
+      padding: 2rem 1rem 2rem 0;
+    }
+  }
+}

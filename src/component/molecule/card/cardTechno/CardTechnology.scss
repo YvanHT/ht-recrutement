@@ -1,0 +1,40 @@
+.card-content {
+    padding: 20px 20px 25px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 20px;
+    .card-head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .card-technology__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        .button-title {
+          display: flex;
+          flex-direction: column;
+          border: none;
+          cursor: pointer;
+          background-color: transparent;
+          gap: 5px;
+          .card-mail {
+              font-size: 14px;
+              color: #727272;
+              text-decoration: underline; 
+          }
+        }  
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        .show_button {
+          margin: 0 0 0 0;
+        }
+      }
+    }
+  }

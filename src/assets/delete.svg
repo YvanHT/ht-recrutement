@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38">
+  <defs>
+    <filter id="Tracé_405" x="0" y="0" width="39" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.224"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_297" data-name="Groupe 297" transform="translate(-8201.5 -2014.5)">
+    <g id="Groupe_296" data-name="Groupe 296">
+      <g transform="matrix(1, 0, 0, 1, 8201.5, 2014.5)" filter="url(#Tracé_405)">
+        <path id="Tracé_405-2" data-name="Tracé 405" d="M8,0H22a8,8,0,0,1,8,8V21a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(4.5 3.5)" fill="#fff"/>
+      </g>
+      <g id="trash_1_" data-name="trash (1)" transform="translate(8166 2023.958)">
+        <path id="Tracé_329" data-name="Tracé 329" d="M60.515,2.13H57.586V1.6a1.6,1.6,0,0,0-1.6-1.6h-2.13a1.6,1.6,0,0,0-1.6,1.6V2.13H49.331A1.333,1.333,0,0,0,48,3.462V5.326a.533.533,0,0,0,.533.533h.291l.46,9.662a1.6,1.6,0,0,0,1.6,1.522h8.088a1.6,1.6,0,0,0,1.6-1.522l.46-9.662h.291a.533.533,0,0,0,.533-.533V3.462A1.333,1.333,0,0,0,60.515,2.13ZM53.326,1.6a.533.533,0,0,1,.533-.533h2.13a.533.533,0,0,1,.533.533V2.13h-3.2ZM49.065,3.462a.267.267,0,0,1,.266-.266H60.515a.267.267,0,0,1,.266.266V4.793H49.065ZM59.5,15.47a.532.532,0,0,1-.532.507H50.88a.532.532,0,0,1-.532-.507L49.89,5.858H59.957Z"/>
+        <path id="Tracé_330" data-name="Tracé 330" d="M240.533,215.989a.533.533,0,0,0,.533-.533v-6.923a.533.533,0,1,0-1.065,0v6.923A.533.533,0,0,0,240.533,215.989Z" transform="translate(-185.609 -201.077)"/>
+        <path id="Tracé_331" data-name="Tracé 331" d="M320.533,215.989a.533.533,0,0,0,.533-.533v-6.923a.533.533,0,1,0-1.065,0v6.923A.533.533,0,0,0,320.533,215.989Z" transform="translate(-262.946 -201.077)"/>
+        <path id="Tracé_332" data-name="Tracé 332" d="M160.533,215.989a.533.533,0,0,0,.533-.533v-6.923a.533.533,0,1,0-1.065,0v6.923A.533.533,0,0,0,160.533,215.989Z" transform="translate(-108.272 -201.077)"/>
+      </g>
+    </g>
+  </g>
+</svg>

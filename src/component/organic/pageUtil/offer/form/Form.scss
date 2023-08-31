@@ -1,0 +1,54 @@
+@import '../../../../style.scss';
+
+.offer {
+  .offer__content {
+    .content__block {
+      .block__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .form-input__select {
+          width: 48%;
+          margin: 0 0 2.5rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+        .form-input__text {
+          width: 48%;
+          margin: 0 0 2.5rem 0;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+      }
+      .form-input__upload {
+        width: 48%;
+        margin: 0 0 2.5rem 0;
+        @include tabletMobileBreakpoint {
+          width: 100%;
+        }
+      }
+      .form-input__block-btn {
+        display: flex;
+        gap: 10px 20px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin: 0.7rem 0;
+        .form-input__valid-btn {
+          width: 20%;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+        .form-input__return-btn {
+          width: 20%;
+          @include tabletMobileBreakpoint {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
